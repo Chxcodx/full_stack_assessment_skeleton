@@ -348,8 +348,6 @@ docker-compose -f docker-compose.initial.yml up --build -d
 
 ### solution
 
-**Key Problem-Solving Points**
-
 **1.REST API Development**
 
 - We created a series of REST APIs to allow interaction between the web app and the database. Each API is responsible for handling specific data retrieval or updates, focusing on users and homes.
@@ -370,7 +368,7 @@ docker-compose -f docker-compose.initial.yml up --build -d
 - **Data Sanitization** Data received in requests is validated and sanitized to prevent invalid or malicious input from being processed.
 - **Error Handling** All APIs include error handling using try-catch blocks. We throw specific HTTP exceptions for known issues (e.g., NotFound or BadRequest) and a generic InternalServerErrorException for unexpected errors.
 
-**How to Run**
+**How to Run Backend**
 
 **1.Install dependencies**
 
@@ -402,6 +400,22 @@ docker-compose -f docker-compose.initial.yml down
 
 ```bash
 docker-compose -f docker-compose.final.yml up --build -d
+```
+
+**How to Run Frontend**
+
+**1.Install dependencies**
+
+- Run the following command to install all required packages for the project
+
+```bash
+npm install
+```
+
+**2.Run React App**
+
+```bash
+npm run dev
 ```
 
 ## Submission Guidelines
