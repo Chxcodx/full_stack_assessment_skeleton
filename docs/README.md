@@ -370,53 +370,53 @@ docker-compose -f docker-compose.initial.yml up --build -d
 
 **How to Run Backend**
 
-**1.Install dependencies**
+  **1.Install dependencies**
 
-- Run the following command to install all required packages for the project
+    - Run the following command to install all required packages for the project
 
-```bash
-npm install
-```
+    ```bash
+       npm install
+    ```
 
-**2.Start the MySQL database**
+  **2.Start the MySQL database**
 
-- Use Docker to spin up the MySQL database container with the initial setup
+    - Use Docker to spin up the MySQL database container with the initial setup
 
-```bash
-docker-compose -f docker-compose.initial.yml up --build -d
-```
+    ```bash
+    docker-compose -f docker-compose.initial.yml up --build -d
+    ```
 
-**3.Stop the database container**
+  **3.Stop the database container**
 
-- After the initial setup is complete, stop the running MySQL container:
+  - After the initial setup is complete, stop the running MySQL container:
 
-```bash
-docker-compose -f docker-compose.initial.yml down
-```
+    ```bash
+    docker-compose -f docker-compose.initial.yml down
+    ```
 
-**4.Load the final database schema and migrate data**
+  **4.Load the final database schema and migrate data**
 
-- Now, load the updated schema and migrate the data using the final script
+  - Now, load the updated schema and migrate the data using the final script
 
-```bash
-docker-compose -f docker-compose.final.yml up --build -d
-```
+    ```bash
+    docker-compose -f docker-compose.final.yml up --build -d
+    ```
 
 **How to Run Frontend**
 
-**1.Install dependencies**
+  **1.Install dependencies**
 
-- Run the following command to install all required packages for the project
+    - Run the following command to install all required packages for the project
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-**2.Run React App**
+  **2.Run React App**
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
 ## Submission Guidelines
 
